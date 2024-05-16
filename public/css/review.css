@@ -1,0 +1,81 @@
+.testimonials {
+    padding-top: 100px;
+}
+
+.testimonials-item {
+    background-color: #F2F8FF;
+    padding: 30px;
+    border-radius: 30px;  
+}
+
+.testimonials-item .info{
+    display: flex;
+    align-items: center;
+}
+
+.testimonials-item img {
+    max-width: 45px;
+  
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.testimonials-item .name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #494949;
+}
+
+.testimonials-item .job {
+    color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.testimonials-item p {
+    margin-top: 20px;
+    color: #494949;
+    height: 80px;
+}
+
+.testimonials-item .rating {
+    font-size: 14px;
+    color: #F6BB06;
+}
+
+.testimonials .swiper-pagination {
+  position: relative;
+  margin-top: 40px;
+  bottom: auto;
+}
+
+.testimonials .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+    background-color: #0364FF;
+    transition: width .3s;
+  }
+
+  .testimonials-content .swiper-pagination .swiper-pagination-bullet-active {
+    width: 35px;
+    border-radius: 50px; 
+}
+  
+/* Dots 
+.testimonials-content .swiper-pagination span {
+    background-color: #F2F8FF;
+    transition: width .3s;
+    opacity: 1;
+}
+
+.testimonials-content .swiper-pagination .swiper-pagination-bullet-active {
+    width: 35px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #0364FF;
+}*/
+
+.rating-container {
+    display: flex;
+    justify-content: space-between; /* Coloca los elementos en los extremos */
+    align-items: center; /* Centrar verticalmente */
+    margin-top: 15px;
+}
