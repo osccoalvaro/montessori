@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "dev": "nodemon public/js/index.js && npx tailwindcss --watch",
     "start": "node public/js/index.js"
   },
   "keywords": [],

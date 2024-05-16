@@ -1,42 +1,83 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const contactForm = document.getElementById("contactForm");
-  
-    contactForm.addEventListener("submit", async function (event) {
-      event.preventDefault(); // Evitar que el formulario se envíe normalmente
-  
-      // Obtener los datos del formulario
-      const formData = new FormData(contactForm);
-      
-      try {
-        // Hacer la solicitud al servidor (aquí asumo que estás usando Fetch API)
-        const response = await fetch("/send-message", {
-          method: "post",
-          body: formData
-        });
-  
-        // Verificar si la respuesta del servidor es exitosa
-        if (response.ok) {
-          // Mostrar una alerta SweetAlert2 de éxito
-          await Swal.fire({
-            icon: 'success',
-            title: '¡Enviado!',
-            text: 'Gracias por tu mensaje.',
-          });
-          // Limpiar el formulario después de enviar
-          contactForm.reset();
-        } else {
-          // Si la respuesta del servidor no es exitosa, mostrar una alerta SweetAlert2 de error
-          throw new Error('Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.');
-        }
-      } catch (error) {
-        // Si hay un error en la solicitud, mostrar una alerta SweetAlert2 de error
-        Swal.fire({
-          icon: 'error',
-          title: '¡Error!',
-          text: error.message,
-        });
-        console.error('Error:', error);
-      }
+const contactForm = document.getElementById('contactForm');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+
+contactForm.addEventListener('submit', async e => {
+
+  e.preventDefault(); // Detener el envío del formulario
+
+  // Verificar si algún campo está vacío
+  if (!nameInput.value || !emailInput.value || !messageInput.value) {
+    // Mostrar una alerta utilizando SweetAlert2
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Por favor, completa todos los campos.',
     });
+    return; // Salir de la función si hay campos vacíos
+  }
+
+  // Obtener la fecha actual en la zona horaria local
+  const currentDate = new Date();
+  // Convertir la fecha a una cadena en formato horario Perú
+  const formattedDate = currentDate.toLocaleString('es-PE', {
+    timeZone: 'America/Lima',
   });
-  
+
+  await fetch('/send-message', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      name: nameInput.value,
+      email: emailInput.value,
+      message: messageInput.value,
+      date: formattedDate, // Agregar la fecha formateada al objeto enviado
+    }),
+  });
+
+  // Limpiar los campos después de enviar el mensaje
+  nameInput.value = '';
+  emailInput.value = '';
+  messageInput.value = '';
+
+  // Mostrar una alerta de éxito
+  Swal.fire({
+    icon: 'success',
+    title: '¡Enviado!',
+    text: 'Tu mensaje ha sido enviado correctamente.',
+  });
+
+});
+
+/*const contactForm = document.getElementById('contactForm');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+
+contactForm.addEventListener('submit', async e => {
+  e.preventDefault();
+  // Obtener la fecha actual en la zona horaria local
+  const currentDate = new Date();
+  // Convertir la fecha a una cadena en formato horario Perú
+  const formattedDate = currentDate.toLocaleString('es-PE', {
+    timeZone: 'America/Lima',
+  });
+  await fetch('/send-message', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      name: nameInput.value,
+      email: emailInput.value,
+      message: messageInput.value,
+      date: formattedDate, // Agregar la fecha formateada al objeto enviado
+    }),
+  });
+  nameInput.value = '';
+  emailInput.value = '';
+  messageInput.value = '';
+});*/
