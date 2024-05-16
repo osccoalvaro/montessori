@@ -8,7 +8,7 @@ import { google } from 'googleapis';
 
 
 const client_email = process.env.CLIENT_EMAIL;
-const private_key = process.env.PRIVATE_KEY.replace(new RegExp("\\\\n", "\g"), "\n")
+const private_key = process.env.PRIVATE_KEY.replace(new RegExp("\\\\n", "\g"), "\n");
 
 export const SHEET_ID = process.env.SHEET_ID;
 
