@@ -9,18 +9,13 @@
 	<script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
 	<script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine-ie11.min.js" defer></script>
 	<!-- AOS -->
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 	<!-- Custom style -->
 	<link href="./css/output.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/review.css">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
-
+	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body class="antialiased">
@@ -91,6 +86,7 @@
 				<!-- red -->
 				<div data-aos="fade-up" data-aos-delay="400" data-aos-once="true"
 					class="absolute top-20 right-10 sm:right-24 sm:top-28 md:top-36 md:right-32 lg:top-32 lg:right-16 floating">
+
 					<svg class="h-16 sm:h-24" viewBox="0 0 149 149" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<g filter="url(#filter0_d)">
 							<rect x="40" y="32" width="69" height="69" rx="14" fill="#F3627C" />
@@ -115,6 +111,7 @@
 							</filter>
 						</defs>
 					</svg>
+
 				</div>
 				<!-- ux class -->
 				<div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
@@ -141,128 +138,65 @@
 
 	<!-- container -->
 	<div class="container px-4 lg:px-8 mx-auto ">
-
-
 		<div class="mt-24">
-
-
-
-			<h1 class="text-2xl text-center mb-3 text-gray-400">Brindado por profesionales de las mejores universidades
-				e institutos del Perú</h1>
-
+			<h1 class="text-2xl text-center mb-3 text-gray-400">Brindado por profesionales de las mejores universidades e institutos del Perú</h1>
 			<!-- Infinite Horizontal Scroll Animation -->
-
 			<div
 				class="mt-5 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-				<ul
-					class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-					<li>
-						<img class="h-12" src="img/google.svg" alt="UNI" />
-					</li>
-					<li>
-						<img class="h-12" src="img/google.svg" alt="UNFV" />
-					</li>
-					<li>
-						<img class="h-12" src="img/google.svg" alt="UNE" />
-					</li>
-					<li>
-						<img class="h-12" src="img/google.svg" alt="UNMSM" />
-					</li>
-					<li>
-						<img class="h-12" src="img/google.svg" alt="IESPP" />
-					</li>
+				<ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+					<li><img class="h-12" src="img/google.svg" alt="UNI" /></li>
+					<li><img class="h-12" src="img/google.svg" alt="UNFV" /></li>
+					<li><img class="h-12" src="img/google.svg" alt="UNE" /></li>
+					<li><img class="h-12" src="img/google.svg" alt="UNMSM" /></li>
+					<li><img class="h-12" src="img/google.svg" alt="IESPP" /></li>
 				</ul>
-				<ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
-					aria-hidden="true">
-					<li>
-						<img class="h-12" src="img/google.svg" alt="UNI" />
-					</li>
-					<li>
-						<img class="h-12" src="img/google.svg" alt="UNFV" />
-					</li>
-					<li>
-						<img class="h-12" src="img/google.svg" alt="UNE" />
-					</li>
-					<li>
-						<img class="h-12" src="img/google.svg" alt="UNMSM" />
-					</li>
-					<li>
-						<img class="h-12" src="img/google.svg" alt="IESPP" />
-					</li>
-
+				<ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+					<li><img class="h-12" src="img/google.svg" alt="UNI" /></li>
+					<li><img class="h-12" src="img/google.svg" alt="UNFV" /></li>
+					<li><img class="h-12" src="img/google.svg" alt="UNE" /></li>
+					<li><img class="h-12" src="img/google.svg" alt="UNMSM" /></li>
+					<li><img class="h-12" src="img/google.svg" alt="IESPP" /></li>
 				</ul>
 			</div>
-
 		</div>
-
-
-
-
-
 
 		<!-- Exigencia académica -->
 		<div class="flex flex-col md:flex-row items-center mt-12">
 			<div data-aos="fade-right" class="md:w-5/12 text-center md:text-left">
-
-				<h1 class=" text-3xl lg:text-4xl font-bold text-darken ">Exigencia académica</h1>
-
-				<p class="my-5 lg:pr-10 text-xl">Nuestro plan de estudios riguroso y personalizado garantiza un alto
-					rendimiento académico.</p>
-				<button
-					class="px-6 py-3 border border-blue text-lg text-blue my-4 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out rounded-full">Contactanos</button>
-
+				<h1 class="tracking-tight text-3xl lg:text-5xl font-bold text-darken ">Exigencia académica</h1>
+				<p class="my-5 lg:pr-10 text-xl">Nuestro plan de estudios riguroso y personalizado garantiza un alto rendimiento académico.</p>
+				<button class="px-6 py-3 border border-blue text-lg text-blue my-4 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out rounded-full">Contactanos</button>
 			</div>
-
 			<img data-aos="fade-left" class="md:w-7/12" src="img/gradebook.png">
 		</div>
 
-
 		<!-- Formación humana -->
 		<div class="mt-24 flex flex-col-reverse md:flex-row items-center">
-
-
 			<div data-aos="fade-right" class="md:w-7/12">
 				<img class="md:w-11/12" src="img/discussion.png">
 			</div>
 			<div data-aos="fade-left" class="md:w-5/12 text-center md:text-left">
-				<h1 class="text-3xl lg:text-4xl font-bold text-darken lg:pr-32">Formación humana</h1>
-
-
-				<p class="my-5 lg:pr-10 text-xl">Fomentamos el desarrollo integral de cada estudiante, cultivando
-					habilidades sociales y emocionales.</p>
-				<button
-					class="px-6 py-3 border border-blue text-lg text-blue my-4 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out rounded-full">Contactanos</button>
-
+				<h1 class="tracking-tight text-3xl lg:text-5xl font-bold text-darken lg:pr-32">Formación humana</h1>
+				<p class="my-5 lg:pr-10 text-xl">Fomentamos el desarrollo integral de cada estudiante, cultivando habilidades sociales y emocionales.</p>
+				<button class="px-6 py-3 border border-blue text-lg text-blue my-4 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out rounded-full">Contactanos</button>
 			</div>
 		</div>
 
 		<!-- Exigencia académica -->
 		<div class="flex flex-col md:flex-row items-center mt-12">
 			<div data-aos="fade-right" class="md:w-5/12 text-center md:text-left">
-
-				<h1 class=" text-3xl lg:text-4xl font-bold text-darken ">Exigencia académica</h1>
-
-				<p class="my-5 lg:pr-10 text-xl">Nuestro plan de estudios riguroso y personalizado garantiza un alto
-					rendimiento académico.</p>
-				<button
-					class="px-6 py-3 border border-blue text-lg text-blue my-4 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out rounded-full">Contactanos</button>
-
+				<h1 class="tracking-tight text-3xl lg:text-5xl font-bold text-darken ">Exigencia académica</h1>
+				<p class="my-5 lg:pr-10 text-xl">Nuestro plan de estudios riguroso y personalizado garantiza un alto rendimiento académico.</p>
+				<button class="px-6 py-3 border border-blue text-lg text-blue my-4 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out rounded-full">Contactanos</button>
 			</div>
-
 			<img data-aos="fade-left" class="md:w-7/12" src="img/gradebook.png">
 		</div>
 
-		<!--  ********* -->
-
-		
 		<div class="mt-24 max-w-screen-2xl ">
-
-			<h1 class=" text-3xl lg:text-4xl font-bold text-darken text-center">Padres de familia que confían en nosotros
-			</h1>
-			<!--  TESTIMONIO   -->
+			<h1 class="tracking-tight text-3xl lg:text-5xl font-bold text-darken text-center">Padres de familia que confían en nosotros </h1>
+			<!-- Review -->
 			<section class="testimonials">
 				<div class="container">
-
 					<div class="testimonials-content">
 						<div class="swiper testimonials-slider js-testimonials-slider">
 							<div class="swiper-wrapper">
@@ -271,18 +205,17 @@
 										<img src="img/carlos.png" alt="">
 										<div class="text-box">
 											<h3 class="name">carlos yañez alban</h3>
-											<span class="job">11/01/2024</span>
+											<span class="date">11/01/2024</span>
 										</div>
 									</div>
-									<p>Me gusta porque no sólo es un colegio que les imparte conocimientos sino que
-										también les inculca valores y disciplina</p>
+									<p>Me gusta porque no sólo es un colegio que les imparte conocimientos sino que también les inculca valores y disciplina</p>
 									<div class="rating-container">
 										<div class="rating">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
 										</div>
 										<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
 											viewBox="0 0 48 48">
@@ -312,11 +245,11 @@
 									<p>Muy buen colegio</p>
 									<div class="rating-container">
 										<div class="rating">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
 										</div>
 										<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
 											viewBox="0 0 48 48">
@@ -343,15 +276,14 @@
 											<span class="job">18/11/2020</span>
 										</div>
 									</div>
-									<p>Me trae muchos recuerdos de mis peques allí iniciaron ..María Montessori ...como
-										creció el colegio 🥳</p>
+									<p>Me trae muchos recuerdos de mis peques allí iniciaron ..María Montessori ...como creció el colegio 🥳</p>
 									<div class="rating-container">
 										<div class="rating">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
 										</div>
 										<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
 											viewBox="0 0 48 48">
@@ -369,8 +301,6 @@
 											</path>
 										</svg>
 									</div>
-
-
 								</div>
 								<div class="swiper-slide testimonials-item">
 									<div class="info">
@@ -383,11 +313,11 @@
 									<p>Por lo dedicado de sus docentes y en especial de los directores</p>
 									<div class="rating-container">
 										<div class="rating">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
 										</div>
 										<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
 											viewBox="0 0 48 48">
@@ -406,7 +336,6 @@
 										</svg>
 									</div>
 								</div>
-
 								<div class="swiper-slide testimonials-item">
 									<div class="info">
 										<img src="img/buho.png" alt="">
@@ -415,15 +344,14 @@
 											<span class="job">03/09/2019</span>
 										</div>
 									</div>
-									<p>Buen colegio
-									</p>
+									<p>Buen colegio</p>
 									<div class="rating-container">
 										<div class="rating">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
+											<img src="img/star.svg" alt="" class="start">
 										</div>
 										<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
 											viewBox="0 0 48 48">
@@ -442,132 +370,139 @@
 										</svg>
 									</div>
 								</div>
-
-
-
-
 							</div>
 						</div>
-
 						<!-- If we need pagination -->
 						<div class="swiper-pagination js-testimonials-pagination"></div>
-
-
-
 					</div>
-
-
-
 				</div>
-
 			</section>
-			<!--  TESTIMONIO   -->
-
-
 		</div>
-		<!--  ********* -->
-
 
 		<div class="mt-24">
-			<h1 class="text-2xl text-center mb-3 text-gray-400">Universidades e institutos a las que ingresan nuestros
-				estudiantes</h1>
-
+			<h1 class="text-2xl text-center mb-3 text-gray-400">Universidades e institutos a las que ingresan nuestros estudiantes</h1>
 			<!-- Infinite Horizontal Scroll Animation -->
-
-			<div
-				class="mt-5 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+			<div class="mt-5 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
 				<ul
 					class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-					<li>
-						<img class="h-12" src="img/google.svg" alt="UNI" />
-					</li>
-					<li>
-						<img class="h-12" src="img/google.svg" alt="UNFV" />
-					</li>
-					<li>
-						<img class="h-12" src="img/google.svg" alt="UNE" />
-					</li>
-					<li>
-						<img class="h-12" src="img/google.svg" alt="UNMSM" />
-					</li>
-					<li>
-						<img class="h-12" src="img/google.svg" alt="IESPP" />
-					</li>
+					<li><img class="h-12" src="img/google.svg" alt="UNI" /></li>
+					<li><img class="h-12" src="img/google.svg" alt="UNFV" /></li>
+					<li><img class="h-12" src="img/google.svg" alt="UNE" /></li>
+					<li><img class="h-12" src="img/google.svg" alt="UNMSM" /></li>
+					<li><img class="h-12" src="img/google.svg" alt="IESPP" /></li>
 				</ul>
-				<ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
-					aria-hidden="true">
-					<li>
-						<img class="h-12" src="img/google.svg" alt="UNI" />
-					</li>
-					<li>
-						<img class="h-12" src="img/google.svg" alt="UNFV" />
-					</li>
-					<li>
-						<img class="h-12" src="img/google.svg" alt="UNE" />
-					</li>
-					<li>
-						<img class="h-12" src="img/google.svg" alt="UNMSM" />
-					</li>
-					<li>
-						<img class="h-12" src="img/google.svg" alt="IESPP" />
-					</li>
-
+				<ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+					<li><img class="h-12" src="img/google.svg" alt="UNI" /></li>
+					<li><img class="h-12" src="img/google.svg" alt="UNFV" /></li>
+					<li><img class="h-12" src="img/google.svg" alt="UNE" /></li>
+					<li><img class="h-12" src="img/google.svg" alt="UNMSM" /></li>
+					<li><img class="h-12" src="img/google.svg" alt="IESPP" /></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 
-
 	<div class="mt-24">
-		<h1 class=" text-3xl lg:text-4xl font-bold text-darken text-center">Matrícula 2025</h1>
+		<h1 class="tracking-tight text-3xl lg:text-5xl font-bold text-darken text-center">Matrícula 2025</h1>
 		<p class="my-5 text-2xl text-center">Déjanos tus datos y nos contactaremos contigo</p>
 	</div>
-
+	<!-- Contact form -->
 	<section class="text-gray-600 body-font relative">
-		<div class="container px-5 py-24 mx-auto">
+		<div class="container px-5 py-4 mx-auto">
 			<div class="lg:w-1/2 md:w-2/3 mx-auto">
-
 				<form id="contactForm">
-					<div class="flex flex-wrap -m-2">
-						<div class="p-2 w-1/2">
-							<div class="relative">
-								<label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-								<input type="text" id="name" name="name"
-									class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+					<div class="flex flex-wrap">
+
+					
+						<div class="pr-6 w-full md:w-1/2">
+							<div class="relative">				
+
+									<div class="input-container ">
+										<input type="text" name="name" class="input" id="name" />
+										<label for="">Nombres</label>
+										<span>Nombres</span>
+									  </div>				
 							</div>
 						</div>
-						<div class="p-2 w-1/2">
+
+						<div class="pr-4 w-full md:w-1/2">
 							<div class="relative">
-								<label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-								<input type="email" id="email" name="email"
-									class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+
+								<div class="input-container ">
+									<input type="text" name="apellido" class="input" id="apellido"/>
+									<label for="">Apellidos</label>
+									<span>Nombres</span>
+								  </div>
 							</div>
 						</div>
-						<div class="p-2 w-full">
-							<div class="relative">
-								<label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-								<textarea id="message" name="message"
-									class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+
+						<div class="pr-4 w-full md:w-1/2">
+							<div class="relative">				
+
+									<div class="input-container ">
+										<input type="text" name="dni" class="input" id="dni"/>
+										<label for="">DNI</label>
+										<span>Nombres</span>
+									  </div>				
 							</div>
 						</div>
+
+						<div class="pr-4 w-full md:w-1/2">
+							<div class="relative">
+
+								<div class="input-container ">
+									<input type="email" name="email" class="input" id="email"/>
+									<label for="">Correo electrónico</label>
+									<span>Nombres</span>
+								  </div>
+							</div>
+						</div>
+
+						<div class="pr-4 w-full md:w-1/2">
+							<div class="relative">				
+
+									<div class="input-container ">
+										<input type="text" name="felefono" class="input" id="felefono"/>
+										<label for="">Teléfono</label>
+										<span>Nombres</span>
+									  </div>				
+							</div>
+						</div>
+
+						<div class="pr-4 w-full md:w-1/2">
+							<div class="relative">
+
+								<div class="input-container ">
+									<input type="text" name="grado" class="input" id="grado"/>
+									<label for="">Grado</label>
+									<span>Nombres</span>
+								  </div>
+							</div>
+						</div>
+
+				
+				
 						<input type="hidden" id="date" value=""> <!-- Campo oculto para la fecha -->
-						<div class="p-2 w-full">
+						<div class="p-4 w-full">
 							<input type="submit"
-								class="cursor-pointer flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-								value="Enviar" />
+								class="cursor-pointer flex mx-auto text-white bg-indigo-500 border-0 py-3 px-14 focus:outline-none hover:bg-indigo-600 rounded-full text-lg"
+								value="Enviar" />							
 						</div>
+
 					</div>
 				</form>
-
 			</div>
 		</div>
 	</section>
 
+	<!-- Contact form -->
 
 
+
+	 
+	
 
 	<!-- Footer -->
-
 	<footer class="mt-32" style="background-color: rgba(37, 38, 65, 1);">
 		<div class="max-w-lg mx-auto">
 			<div class="flex py-12 justify-center text-white items-center px-20 sm:px-36">
@@ -597,19 +532,15 @@
 			</div>
 		</div>
 	</footer>
-
 	<!-- AOS init -->
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init();
 	</script>
-
 	<script src="js/review.js"></script>
 	<script src="js/form.js"></script>
+	<script src="js/form2.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
-
 </body>
-
 </html>

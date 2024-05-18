@@ -10,8 +10,11 @@ app.use(express.static('public'));
 
 const contactFormSchema = z.object({
   name: z.string().min(1, { message: 'Name is required' }),
+  apellido: z.string().min(1, { message: 'Message is required' }),
+  dni: z.string().min(1, { message: 'Message is required' }),
   email: z.string().email(),
-  message: z.string().min(1, { message: 'Message is required' }),
+  felefono: z.string().min(1, { message: 'Message is required' }),
+  grado: z.string().min(1, { message: 'Message is required' }),
   date: z.string(), // Agregar validación si es necesario
 });
 
@@ -24,7 +27,7 @@ app.post('/send-message', async (req, res) => {
     console.log(rows);
     await sheets.spreadsheets.values.append({
       spreadsheetId: SHEET_ID,
-      range: 'Data!A:D', // Asegúrate de tener suficientes columnas para la fecha
+      range: 'Data!A:G',
       insertDataOption: 'INSERT_ROWS',
       valueInputOption: 'RAW',
       requestBody: {

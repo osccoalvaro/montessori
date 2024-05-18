@@ -5,17 +5,17 @@
 .testimonials-item {
     background-color: #F2F8FF;
     padding: 30px;
-    border-radius: 30px;  
+    border-radius: 30px;
 }
 
-.testimonials-item .info{
+.testimonials-item .info {
     display: flex;
     align-items: center;
 }
 
 .testimonials-item img {
     max-width: 45px;
-  
+
     margin-right: 20px;
     vertical-align: middle;
 }
@@ -26,8 +26,8 @@
     color: #494949;
 }
 
-.testimonials-item .job {
-    color: rgb(156 163 175 / var(--tw-text-opacity));
+.testimonials-item .date {
+    color: #494949;
 }
 
 .testimonials-item p {
@@ -37,14 +37,25 @@
 }
 
 .testimonials-item .rating {
-    font-size: 14px;
-    color: #F6BB06;
+    display: flex;
 }
 
+.testimonials-item .start {
+    margin-right: 4px;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-between; /* Coloca los elementos en los extremos */
+    align-items: center; /* Centrar verticalmente */
+    margin-top: 15px;
+}
+
+/* Swiper */
 .testimonials .swiper-pagination {
-  position: relative;
-  margin-top: 40px;
-  bottom: auto;
+    position: relative;
+    margin-top: 40px;
+    bottom: auto;
 }
 
 .testimonials .swiper-pagination-bullet {
@@ -52,14 +63,14 @@
     width: 10px;
     background-color: #0364FF;
     transition: width .3s;
-  }
-
-  .testimonials-content .swiper-pagination .swiper-pagination-bullet-active {
-    width: 35px;
-    border-radius: 50px; 
 }
-  
-/* Dots 
+
+.testimonials-content .swiper-pagination .swiper-pagination-bullet-active {
+    width: 35px;
+    border-radius: 50px;
+}
+
+/* 
 .testimonials-content .swiper-pagination span {
     background-color: #F2F8FF;
     transition: width .3s;
@@ -71,11 +82,5 @@
     height: 10px;
     border-radius: 50px;
     background-color: #0364FF;
-}*/
-
-.rating-container {
-    display: flex;
-    justify-content: space-between; /* Coloca los elementos en los extremos */
-    align-items: center; /* Centrar verticalmente */
-    margin-top: 15px;
-}
+} 
+*/
