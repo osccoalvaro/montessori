@@ -1,93 +1,33 @@
-const contactForm = document.getElementById('contactForm');
-const nameInput = document.getElementById('name');
-const apellidoInput = document.getElementById('apellido');
-const dniInput = document.getElementById('dni');
-const emailInput = document.getElementById('email');
-const felefonoInput = document.getElementById('felefono');
-const gradoInput = document.getElementById('grado');
+const inputs = document.querySelectorAll(".input");
 
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
 
-contactForm.addEventListener('submit', async e => {
-
-  e.preventDefault(); // Prevenir el comportamiento predeterminado del formulario
-  // Obtener la fecha actual en la zona horaria local
-  const currentDate = new Date();
-  // Convertir la fecha a una cadena en formato horario Perú
-  const formattedDate = currentDate.toLocaleString('es-PE', {
-    timeZone: 'America/Lima',
-  });
-  try {
-    const response = await fetch('/send-message', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name: nameInput.value,
-        apellido: apellidoInput.value,
-        dni: dniInput.value,
-        email: emailInput.value,
-        felefono: felefonoInput.value,
-        grado: gradoInput.value,
-        date: formattedDate, // Agregar la fecha formateada al objeto enviado
-      }),
-    });
-    if (response.ok) {
-      Swal.fire({
-        icon: 'success',
-        title: '¡Mensaje enviado!',
-        text: 'Tu mensaje ha sido enviado exitosamente.',
-      });
-      nameInput.value = '';
-      apellidoInput.value = '';
-      dniInput.value = '';
-      emailInput.value = '';
-      felefonoInput.value = '';
-      gradoInput.value = '';
-    } else {
-      const errorData = await response.json();
-      Swal.fire({
-        icon: 'error',
-        title: 'Error',
-        text: `Hubo un problema al enviar el mensaje: ${errorData.error}`,
-      });
-    }
-  } catch (error) {
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'Hubo un problema al enviar el mensaje.',
-    });
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
   }
-  
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
 });
 
-/*const contactForm = document.getElementById('contactForm');
-const nameInput = document.getElementById('name');
-const emailInput = document.getElementById('email');
-const messageInput = document.getElementById('message');
+/* Contact form validation */
+var input = document.getElementById('telefono');
+input.addEventListener('input', function () {
+  if (this.value.length > 9)
+    this.value = this.value.slice(0, 9);
+})
 
-contactForm.addEventListener('submit', async e => {
-  e.preventDefault();
-  // Obtener la fecha actual en la zona horaria local
-  const currentDate = new Date();
-  // Convertir la fecha a una cadena en formato horario Perú
-  const formattedDate = currentDate.toLocaleString('es-PE', {
-    timeZone: 'America/Lima',
-  });
-  await fetch('/send-message', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      name: nameInput.value,
-      email: emailInput.value,
-      message: messageInput.value,
-      date: formattedDate, // Agregar la fecha formateada al objeto enviado
-    }),
-  });
-  nameInput.value = '';
-  emailInput.value = '';
-  messageInput.value = '';
-});*/
+/*
+var input=  document.getElementById('dni');
+input.addEventListener('input',function(){
+  if (this.value.length > 8) 
+     this.value = this.value.slice(0,8); 
+})
+*/

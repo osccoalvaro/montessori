@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
     const swiper = new Swiper('.js-testimonials-slider', {
         // Optional parameters
         grabCursor: true,
@@ -18,5 +17,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-
 });

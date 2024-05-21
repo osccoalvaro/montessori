@@ -9,17 +9,21 @@ app.use(express.json());
 app.use(express.static('public'));
 
 const contactFormSchema = z.object({
-  name: z.string().min(1, { message: 'Name is required' }),
-  apellido: z.string().min(1, { message: 'Message is required' }),
-  dni: z.string().min(1, { message: 'Message is required' }),
-  email: z.string().email(),
-  felefono: z.string().min(1, { message: 'Message is required' }),
-  grado: z.string().min(1, { message: 'Message is required' }),
-  date: z.string(), // Agregar validación si es necesario
+  nombre: z.string().trim().min(1, { message: 'Nombre is required' }),
+  apellido: z.string().trim().min(1, { message: 'Apellido is required' }),
+  dni: z.string().trim().min(1, { message: 'DNI is required' }),
+  email: z.string().trim().min(1, { message: 'Correo is required' }),
+  telefono: z.string().trim().min(1, { message: 'Teléfono is required' }),
+  grado: z.string().trim().min(1, { message: 'Grado is required' }),
+  date: z.string(),
 });
 
-app.post('/send-message', async (req, res) => {
+/*
+nombre: z.string().required({ message: 'Nombre is required' }),
+nombre: z.string().nonempty({ message: 'Nombre is required' }),
+*/
 
+app.post('/send-message', async (req, res) => {
   try {
     const body = contactFormSchema.parse(req.body);
     // Object to Sheets
@@ -42,7 +46,6 @@ app.post('/send-message', async (req, res) => {
       res.status(400).json({ error });
     }
   }
-
 });
 
 app.listen(process.env.PORT, () => {
