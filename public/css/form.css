@@ -9,22 +9,24 @@
 .input {
   width: 100%;
   outline: none;
-  border: 2px solid #494949;
+  border: 1px solid #D1D5DB;
   background: none;
-  padding: 0.6rem 1.2rem;
+  padding: 0.6rem 1.8rem;
   color: #494949;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 17px;
   letter-spacing: 0.5px;
   border-radius: 25px;
   transition: 0.3s;
   height: 50px;
+  background-color: #F9F9FA;
+
 }
 
 .input-container select {
   position: relative; 
   padding: 0.8rem 1.2rem;
-  color: transparent;
+  color: #494949;
 }
 
 
@@ -44,11 +46,11 @@ option {
 .input-container label {
   position: absolute;
   top: 50%;
-  left: 28px;
+  left: 36px;
   transform: translateY(-50%);
   padding: 0 0.4rem;
   color: #494949;
-  font-size: 1rem;
+  font-size: 17px;
   font-weight: 400;
   pointer-events: none;
   z-index: 1000;
@@ -69,7 +71,7 @@ option {
 .input-container span {
   position: absolute;
   top: 0;
-  left: 25px;
+  left: 31px;
   transform: translateY(-50%);
   font-size: 0.9rem;
   padding: 0 0.4rem;
@@ -87,8 +89,8 @@ option {
   width: 10%;
   opacity: 0;
   transition: 0.3s;
-  height: 5px;
-  background-color: #ffff;
+  height: 7px;
+  background-color: #FFFFFF;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -104,8 +106,9 @@ option {
 .input-container.focus label {
   top: 0;
   transform: translateY(-50%);
-  left: 25px;
-  font-size: 1rem;
+  left: 33px;
+  font-size: 14px;
+  color: #0364FF;
 }
 
 .input-container.focus span:before,
@@ -114,79 +117,10 @@ option {
   opacity: 1;
 }
 
-.contact-info {
-  padding: 2.3rem 2.2rem;
-  position: relative;
-}
 
 
-
-.square {
-  position: absolute;
-  height: 400px;
-  top: 50%;
-  left: 50%;
-  transform: translate(195%, 11%);
-  /*opacity: 0.2;*/
-}
-
-@media (max-width: 850px) {
-  .form {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-info:before {
-    bottom: initial;
-    top: -75px;
-    right: 65px;
-    transform: scale(0.95);
-  }
-
-  .contact-form:before {
-    top: -13px;
-    left: initial;
-    right: 70px;
-  }
-
-  .square {
-    transform: translate(140%, 60%);
-    height: 350px;
-  }
-
-  .big-circle {
-    bottom: 75%;
-    transform: scale(0.9) translate(-40%, 30%);
-    right: 50%;
-  }
-
-  .text {
-    margin: 1rem 0 1.5rem 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 0rem;
-  }
-
-  .contact-info:before {
-    display: none;
-  }
-
-  .square,
-  .big-circle {
-    display: none;
-  }
-
-  form,
-  .contact-info {
-    padding: 1.7rem 1.6rem;
-    
-  }
-
-
-
-  .input {
-    padding: 0.60rem 1.2rem;
-  } 
+.input:focus {
+  background-color: #FFFFFF;
+  border-color: #0364FF;
+  box-shadow: 0 0 0 2px rgba(3, 100, 255, 0.3);
 }

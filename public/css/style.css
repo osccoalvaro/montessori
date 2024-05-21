@@ -82,3 +82,24 @@ body {
         background: var(--background-image)
     }
 }
+
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    max-width: 1520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* MAPA */
+#map {
+    width: 80%; /* Ajusta el ancho según tus necesidades */
+    height: 450px; /* Altura del mapa */
+    border: none; /* Quita el borde del iframe */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de elevación */
+}
