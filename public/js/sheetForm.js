@@ -27,13 +27,13 @@ contactForm.addEventListener('submit', async e => {
         telefono: telefonoInput.value,
         grado: gradoInput.value,
         date: formattedDate,
-      }),
+      }),   
     });
     if (response.ok) {
       Swal.fire({
         icon: 'success',
         title: '¡Mensaje enviado!',
-        text: 'Tu mensaje ha sido enviado exitosamente.',
+        text: 'Uno de nuestros asesores se comunicará contigo',
       });
       nombreInput.value = '';
       apellidoInput.value = '';
