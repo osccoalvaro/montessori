@@ -16,11 +16,15 @@ body {
 }
 
 .bg-cream {
-    background-color: #F2F8FF;
+    background-color: #0364FF;
 }
 
 .bg-blue {
     background-color: #0364FF;
+}
+
+.bg-yellow {
+    background-color: #FECB33;
 }
 
 .text-darken {
@@ -31,8 +35,16 @@ body {
     color: #0364FF;
 }
 
-.border-blue {
-    border-color: #0364FF;
+.text-yellow {
+    color: #FECB33;
+}
+
+.border-yellow {
+    border-color: #FECB33;
+}
+
+.border-skyblue {
+    border-color: #D0E0F2;
 }
 
 .floating { 
