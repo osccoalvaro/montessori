@@ -30,13 +30,13 @@
 						<img class="h-11" src="img/colegio-montessori-logo.svg" alt="">	
 				</div>
 
-				<button class="md:hidden " onclick="abrirAppPlayStore('com.google.android.youtube')">
+				<button class="md:hidden " onclick="abrirAppStoreYouTube()">
 					<img src="img/smiledu.svg" alt="" class="w-9 ">				
 				</button>
 
-				<a href="https://apps.apple.com/es/app/youtube/id284180093">Visita la página de YouTube en Play Store</a>
+				<a href="https://apps.apple.com/pe/app/smiledu/id1371922012">Visita la página de YouTube en Play Store</a>
 
-
+			
 			</div>
 
 			<nav :class="{ 'transform md:transform-none': !open, 'h-full': open }"
@@ -404,11 +404,7 @@ src="img/colegio-montessori-estudiante.png">
 
 	<!-- AOS init -->
 
-	<script>
-		function abrirAppPlayStore(appId) {
-		  window.location.href = `intent://play.google.com/store/apps/details?id=${appId}&hl=es&gl=MX`;
-		}
-		</script>
+
 
 <script>
 	function abrirAppStoreYouTube() {
