@@ -56,8 +56,6 @@
   z-index: 500;
 }
 
-
-
 .input-container span:before,
 .input-container span:after {
   content: "";
@@ -92,8 +90,6 @@
   width: 50%;
   opacity: 1;
 }
-
-
 
 .input:focus {
   background-color: #FFFFFF;
