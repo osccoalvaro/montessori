@@ -30,13 +30,12 @@
 						<img class="h-11" src="img/colegio-montessori-logo.svg" alt="">	
 				</div>
 
-				<button class="md:hidden " onclick="abrirAppStoreYouTube()">
+				<button class="md:hidden " onclick="abrirAppStoreApp()">
 					<img src="img/smiledu.svg" alt="" class="w-9 ">				
 				</button>
 
-				<a href="https://apps.apple.com/pe/app/smiledu/id1371922012">Visita la página de YouTube en Play Store</a>
-
-			
+		
+					
 			</div>
 
 			<nav :class="{ 'transform md:transform-none': !open, 'h-full': open }"
@@ -407,9 +406,16 @@ src="img/colegio-montessori-estudiante.png">
 
 
 <script>
-	function abrirAppStoreYouTube() {
-	  window.location.href = "https://apps.apple.com/es/app/youtube/id284180093";
-	}
+function abrirAppStoreApp() {
+  const so = detectarSO();
+  if (so === "Android") {
+    abrirAppPlayStore("pe.softhy.smiledu"); // Smiledu app ID for Android
+  } else if (so === "iOS") {
+    window.location.href = "https://apps.apple.com/pe/app/smiledu/id1371922012"; // Smiledu app URL for iOS
+  } else {
+    // Handle other OS cases (optional)
+  }
+}
 	</script>
 
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
