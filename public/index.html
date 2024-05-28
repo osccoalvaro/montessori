@@ -34,6 +34,9 @@
 					<img src="img/smiledu.svg" alt="" class="w-9 ">				
 				</button>
 
+				<a href="https://play.google.com/store/apps/details?id=com.google.android.youtube">Visita la página de YouTube en Play Store</a>
+
+
 			</div>
 
 			<nav :class="{ 'transform md:transform-none': !open, 'h-full': open }"
@@ -406,6 +409,12 @@ src="img/colegio-montessori-estudiante.png">
 		  window.location.href = `intent://play.google.com/store/apps/details?id=${appId}&hl=es&gl=MX`;
 		}
 		</script>
+
+<script>
+	function abrirPlayStoreWeb(appId) {
+	  window.location.href = `https://play.google.com/store/apps/details?id=${appId}`;
+	}
+	</script>
 
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
