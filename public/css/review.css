@@ -2,16 +2,12 @@
     padding-top: 60px;
 }
 
-
-
-
 .testimonials-item {
     /*background-color: #F2F8FF;*/
     padding: 30px;
     border-radius: 25px;
     background-color: #FFFFFF;
     border: 1px solid #F1F5F9;
-    
     margin: 35px;
     box-shadow: 0 8px 40px rgba(0,0,0,.04);
 }   
@@ -19,12 +15,10 @@
 .testimonials-item .info {
     display: flex;
     align-items: center;
-
 }
 
 .testimonials-item img {
     max-width: 45px;
-
     margin-right: 15px;
     vertical-align: middle;
 }
@@ -33,7 +27,6 @@
     font-size: 16px;
     font-weight: 700;
     color: #494949;
-
 }
 
 .testimonials-item .date {

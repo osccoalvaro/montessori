@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
 	<meta charset="UTF-8">
@@ -16,50 +16,42 @@
 	<link rel="stylesheet" href="css/review.css">
 	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
 </head>
 
 <body class="antialiased">
 	<!-- navbar -->
 	<div x-data="{ open: false }" class="w-full text-gray-700 bg-cream">
-
-		<div class="flex flex-col max-w-screen-2xl px-8 mx-auto md:items-center md:justify-between md:flex-row">
-			<div class="flex flex-row items-center justify-between py-6">
-				
-				<div class="z-50  md:mt-8 ">
-						<img class="h-11" src="img/colegio-montessori-logo.svg" alt="">	
+		<div class="flex flex-col max-w-screen-2xl px-6 lg:px-12 mx-auto md:items-center md:justify-between md:flex-row">
+			<div class="flex flex-row items-center justify-between py-6">			
+				<div class="z-50  md:mt-8">
+					<img class="h-10 lg:h-11" src="img/colegio-montessori-logo.svg" alt="">	
 				</div>
-
-				<a class="md:hidden" href="https://apps.apple.com/pe/app/smiledu/id1371922012">
-					<img src="img/smiledu.svg" alt="" class="w-9 ">	
-				</a>
-
-					
+				<a class="md:hidden" href="https://app.smiledu.com/montessori">
+					<img src="img/smiledu.svg" alt="" class="w-9">	
+				</a>			
 			</div>
-
 			<nav :class="{ 'transform md:transform-none': !open, 'h-full': open }"
 				class="h-0 md:h-auto flex flex-col flex-grow md:items-center pb-4 md:pb-0 md:flex md:justify-end md:flex-row origin-top duration-300 scale-y-0">
-				<a class=" z-10 shadow-md px-8 py-2 mt-2 text-base text-center border border-skyblue bg-white text-gray-800 rounded-full "
-					href="https://smiledu.com/" target="_blank">Aula Virtual</a>	
+				<a class=" z-10 shadow-md px-8 py-2 mt-2 text-base text-center border border-skyblue bg-white text-gray-800 rounded-full"
+					href="https://app.smiledu.com/montessori" target="_blank">Aula Virtual</a>	
 			</nav>
 		</div>
 	</div>
-
+  
 	<div class="bg-cream">
-		<div class="max-w-screen-2xl px-8 mx-auto flex flex-col lg:flex-row items-start">
-			
+		<div class="max-w-screen-2xl px-6 lg:px-12 mx-auto flex flex-col lg:flex-row items-start">	
 			<!--Left col-->
 			<div
 				class="flex flex-col w-full lg:w-6/12 items-center justify-center lg:pt-24 lg:items-start text-center lg:text-left mb-5 md:mb-0">
 				<h1 data-aos="fade-right" data-aos-once="true"
-					class="tracking-tight my-5 text-5xl font-bold text-white">
+					class="tracking-tight my-5 text-4xl lg:text-5xl font-bold text-white">
 					Exigencia <span class="text-yellow">académica</span> y formación <span class="text-yellow">humana</span>
 				</h1>
-				<p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="max-w-xs leading-snug text-2xl text-white mb-8 lg:max-w-none">
+				<p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="max-w-xs text-xl lg:text-2xl text-white mb-8 lg:max-w-none">
 					29 años de experiencia educativa de calidad</p>
 				<div data-aos="fade-up" data-aos-once="true" data-aos-delay="700"
 					class="w-full md:flex items-center justify-center lg:justify-start md:space-x-5">
-					<button
+					<button onclick="location.href='#form'"
 						class="lg:mx-0 border border-yellow bg-yellow text-white text-lg rounded-full py-3 px-7 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out">
 						Contactanos
 					</button>
@@ -68,8 +60,7 @@
 			
 			<!--Right col-->
 			<div class="w-full lg:w-8/12 lg:-mt-10 relative">
-				<img data-aos="fade-up" data-aos-once="true" class=""
-src="img/colegio-montessori-estudiante.png">
+				<img data-aos="fade-up" data-aos-once="true" class="" src="img/colegio-montessori-estudiante.png">
 				<div data-aos="fade-up" data-aos-delay="300" data-aos-once="true"
 					class="absolute top-14 -left-6 sm:top-32 sm:left-10 md:top-40 md:left-16 lg:left-8 lg:top-44 floating-4">
 					<img class="bg-white bg-opacity-50 rounded-lg h-10 sm:h-16" src="img/colegio-montessori-workspace.png">
@@ -87,15 +78,14 @@ src="img/colegio-montessori-estudiante.png">
 					<img class="bg-white bg-opacity-50 rounded-full h-10 lg:h-full" src="img/colegio-montessori-book.png" alt="">
 				</div>
 			</div>
-
 		</div>
 	</div>
 
 	<!-- container -->
-	<div class="container px-4 lg:px-8 mx-auto max-w-screen-2xl text-gray-700 overflow-x-hidden">
+	<div class="container px-6 lg:px-12 mx-auto max-w-screen-2xl">
 		<!-- Infinite horizontal scroll animation -->
 		<div class="mt-24">
-			<h1 class="text-2xl text-center mb-3 text-gray-400">Brindado por profesionales de las mejores universidades e institutos del Perú</h1>
+			<h1 class="text-xl lg:text-2xl text-center mb-3 text-gray-400">Brindado por profesionales de las mejores universidades e institutos del Perú</h1>
 			<div
 				class="mt-5 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
 				<ul
@@ -120,9 +110,9 @@ src="img/colegio-montessori-estudiante.png">
 		<!-- Exigencia académica -->
 		<div class="flex flex-col md:flex-row items-center mt-12">
 			<div data-aos="fade-right" class="md:w-5/12 text-center md:text-left">
-				<h1 class="tracking-tight text-3xl lg:text-4xl font-bold text-darken ">Exigencia académica</h1>
-				<p class="my-5 lg:pr-10 text-xl">Nuestro plan de estudios riguroso y personalizado garantiza un alto rendimiento académico.</p>
-				<button
+				<h1 class="text-3xl lg:text-4xl font-bold text-darken">Exigencia académica</h1>
+				<p class="my-5 lg:pr-10 text-lg lg:text-xl">Nuestro plan de estudios riguroso y personalizado garantiza un alto rendimiento académico.</p>
+				<button onclick="location.href='#form'"
 					class="px-6 py-3 border border-blue text-lg text-blue my-4 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out rounded-full">Contactanos</button>
 			</div>
 			<img data-aos="fade-left" class="md:w-7/12" src="img/gradebook.png">
@@ -134,9 +124,9 @@ src="img/colegio-montessori-estudiante.png">
 				<img class="md:w-11/12" src="img/discussion.png">
 			</div>
 			<div data-aos="fade-left" class="md:w-5/12 text-center md:text-left">
-				<h1 class="tracking-tight text-3xl lg:text-4xl font-bold text-darken lg:pr-32">Formación humana</h1>
-				<p class="my-5 lg:pr-10 text-xl">Fomentamos el desarrollo integral de cada estudiante, cultivando habilidades sociales y emocionales.</p>
-				<button
+				<h1 class="text-3xl lg:text-4xl font-bold text-darken lg:pr-32">Formación humana</h1>
+				<p class="my-5 lg:pr-10 text-lg lg:text-xl">Fomentamos el desarrollo integral de cada estudiante, cultivando habilidades sociales y emocionales.</p>
+				<button onclick="location.href='#form'"
 					class="px-6 py-3 border border-blue text-lg text-blue my-4 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out rounded-full">Contactanos</button>
 			</div>
 		</div>
@@ -144,17 +134,17 @@ src="img/colegio-montessori-estudiante.png">
 		<!-- Exigencia académica -->
 		<div class="flex flex-col md:flex-row items-center mt-12">
 			<div data-aos="fade-right" class="md:w-5/12 text-center md:text-left">
-				<h1 class="tracking-tight text-3xl lg:text-4xl font-bold text-darken">Exigencia académica</h1>
-				<p class="my-5 lg:pr-10 text-xl">Nuestro plan de estudios riguroso y personalizado garantiza un alto rendimiento académico.</p>
-				<button
+				<h1 class="text-3xl lg:text-4xl font-bold text-darken">Exigencia académica</h1>
+				<p class="my-5 lg:pr-10 text-lg lg:text-xl">Nuestro plan de estudios riguroso y personalizado garantiza un alto rendimiento académico.</p>
+				<button onclick="location.href='#form'"
 					class="px-6 py-3 border border-blue text-lg text-blue my-4 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out rounded-full">Contactanos</button>
 			</div>
 			<img data-aos="fade-left" class="md:w-7/12" src="img/gradebook.png">
 		</div>
 
 		<!-- Padres de familia que confían en nosotros -->
-		<div class="mt-24 max-w-screen-2xl ">
-			<h1 class="tracking-tight text-3xl lg:text-4xl font-bold text-darken text-center">Padres de familia que confían en nosotros</h1>
+		<div class="mt-24 max-w-screen-2xl">
+			<h1 class="text-3xl lg:text-4xl font-bold text-darken text-center">Padres de familia que confían en nosotros</h1>
 			<!-- Review -->
 			<section class="testimonials">
 				<div class="container">
@@ -271,8 +261,8 @@ src="img/colegio-montessori-estudiante.png">
 		</div>
 
 		<!-- Infinite horizontal scroll animation -->
-		<div class="mt-24">
-			<h1 class="text-2xl text-center mb-3 text-gray-400">Universidades e institutos a las que ingresan nuestros estudiantes</h1>
+		<div class="mt-24 px-6 lg:px-12">
+			<h1 class="text-xl lg:text-2xl text-center mb-3 text-gray-400">Universidades e institutos a las que ingresan nuestros estudiantes</h1>
 			<div
 				class="mt-5 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
 				<ul
@@ -295,96 +285,94 @@ src="img/colegio-montessori-estudiante.png">
 		</div>
 	</div>
 
-	<!-- Contact form -->
-	<section class="mt-24">
-		<h1 class="tracking-tight text-3xl lg:text-4xl font-bold text-darken text-center">Matrícula 2025</h1>
-		<p class="my-5 text-xl text-center">Déjanos tus datos y nos contactaremos contigo 👋</p>
-		<div class="container px-5 py-4 mx-auto">
-			<div class="lg:w-1/2 md:w-2/3 mx-auto">
-				<form id="contactForm">
-					<div class="flex flex-wrap">
-						<div class="pr-4 w-full md:w-1/2">
-							<div class="relative">
-								<div class="input-container">
-									<input type="text" class="input" id="nombre" required>
-									<label>Nombres</label>
-									<span>Nombres</span>
-								</div>
+	<!-- contact form -->
+	<section class="container mt-24 px-6 lg:px-12 py-4 mx-auto" id="form">
+		<h1 class="text-3xl lg:text-4xl font-bold text-darken text-center">Matrícula 2025</h1>
+		<p class="my-5 lg:pr-10 text-lg lg:text-xl text-center">Déjanos tus datos y nos contactaremos contigo 👋</p>
+		<div class="lg:w-1/2 md:w-2/3 mx-auto">
+			<form id="contactForm">
+				<div class="flex flex-wrap">
+					<div class="pr-4 w-full md:w-1/2">
+						<div class="relative">
+							<div class="input-container">
+								<input type="text" class="input" id="nombre" required>
+								<label>Nombres</label>
+								<span>Nombres</span>
 							</div>
-						</div>
-						<div class="pr-4 w-full md:w-1/2">
-							<div class="relative">
-								<div class="input-container">
-									<input type="text" class="input" id="apellido" required>
-									<label>Apellidos</label>
-									<span>Apellidos</span>
-								</div>
-							</div>
-						</div>
-						<div class="pr-4 w-full md:w-1/2">
-							<div class="relative">
-								<div class="input-container">
-									<input type="number" class="input" id="dni" inputmode="numeric" required>
-									<label>DNI</label>
-									<span>DNI</span>
-								</div>
-							</div>
-						</div>
-						<div class="pr-4 w-full md:w-1/2">
-							<div class="relative">
-								<div class="input-container">
-									<input type="email" class="input" id="email" required>
-									<label>Correo electrónico</label>
-									<span>Correo electrónico</span>
-								</div>
-							</div>
-						</div>
-						<div class="pr-4 w-full md:w-1/2">
-							<div class="relative">
-								<div class="input-container">
-									<input type="number" class="input" id="telefono" inputmode="numeric" required>
-									<label>Teléfono</label>
-									<span>Teléfono</span>
-								</div>
-							</div>
-						</div>
-						<div class="pr-4 w-full md:w-1/2">
-							<div class="relative">
-								<div class="input-container">
-									<label>Grado</label>
-									<span>Grado</span>
-									<select class="input" id="grado" required>
-										<option hidden> </option> <!-- hidden disabled selected value -->
-										<option>Inicial</option>
-										<option>1° Primaria</option>
-										<option>2° Primaria</option>
-										<option>3° Primaria</option>
-										<option>4° Primaria</option>
-										<option>5° Primaria</option>
-										<option>6° Primaria</option>
-										<option>1° Secundaria</option>
-										<option>2° Secundaria</option>
-										<option>3° Secundaria</option>
-										<option>4° Secundaria</option>
-										<option>5° Secundaria</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<input type="hidden" id="date" value=""> <!-- Campo oculto para la fecha -->
-						<div class="pt-8 w-full">
-							<input type="submit"
-								class="cursor-pointer flex mx-auto bg-blue text-lg text-white rounded-full py-3 px-14 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out"
-								value="Enviar">
 						</div>
 					</div>
-				</form>
-			</div>
+					<div class="pr-4 w-full md:w-1/2">
+						<div class="relative">
+							<div class="input-container">
+								<input type="text" class="input" id="apellido" required>
+								<label>Apellidos</label>
+								<span>Apellidos</span>
+							</div>
+						</div>
+					</div>
+					<div class="pr-4 w-full md:w-1/2">
+						<div class="relative">
+							<div class="input-container">
+								<input type="number" class="input" id="dni" inputmode="numeric" required>
+								<label>DNI</label>
+								<span>DNI</span>
+							</div>
+						</div>
+					</div>
+					<div class="pr-4 w-full md:w-1/2">
+						<div class="relative">
+							<div class="input-container">
+								<input type="email" class="input" id="email" required>
+								<label>Correo electrónico</label>
+								<span>Correo electrónico</span>
+							</div>
+						</div>
+					</div>
+					<div class="pr-4 w-full md:w-1/2">
+						<div class="relative">
+							<div class="input-container">
+								<input type="number" class="input" id="telefono" inputmode="numeric" required>
+								<label>Teléfono</label>
+								<span>Teléfono</span>
+							</div>
+						</div>
+					</div>
+					<div class="pr-4 w-full md:w-1/2">
+						<div class="relative">
+							<div class="input-container">
+								<label>Grado</label>
+								<span>Grado</span>
+								<select class="input" id="grado" required>
+									<option hidden> </option> <!-- hidden disabled selected value -->
+									<option>Inicial</option>
+									<option>1° Primaria</option>
+									<option>2° Primaria</option>
+									<option>3° Primaria</option>
+									<option>4° Primaria</option>
+									<option>5° Primaria</option>
+									<option>6° Primaria</option>
+									<option>1° Secundaria</option>
+									<option>2° Secundaria</option>
+									<option>3° Secundaria</option>
+									<option>4° Secundaria</option>
+									<option>5° Secundaria</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<input type="hidden" id="date" value=""> <!-- Campo oculto para la fecha -->
+					<div class="pt-8 w-full">
+						<input type="submit"
+							class="cursor-pointer flex mx-auto bg-blue text-lg text-white rounded-full py-3 px-14 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out"
+							value="Enviar">
+					</div>
+				</div>
+			</form>
 		</div>
 	</section>
-
+	
 	<!-- google maps -->
-	<div class="map-container">
+	<div class="map-container lg:px-12">
 		<iframe class="lg:rounded-2xl"
 			src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15598.015891450139!2d-76.9072116!3d-12.2141176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105bc02a997134f%3A0x1c284c414001ba33!2sColegio%20Montessori%20-%20Jos%C3%A9%20G%C3%A1lvez!5e0!3m2!1ses-419!2spe!4v1716246266570!5m2!1ses-419!2spe"
 			loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -392,7 +380,7 @@ src="img/colegio-montessori-estudiante.png">
 	</div>
 
 	<!-- footer -->
-	<footer class="mt-32" style="background-color: rgba(37, 38, 65, 1);">
+	<footer class="lg:mt-32" style="background-color: rgba(37, 38, 65, 1);">
 		<div class="max-w-lg mx-auto">
 			<div class="p-4 text-center text-white">
 				<p class="my-3 text-gray-400 text-sm">&copy; 2025 Colegio Montesso S.A.C.</p>
@@ -401,22 +389,6 @@ src="img/colegio-montessori-estudiante.png">
 	</footer>
 
 	<!-- AOS init -->
-
-
-
-<script>
-function abrirAppStoreApp() {
-  const so = detectarSO();
-  if (so === "Android") {
-    abrirAppPlayStore("pe.softhy.smiledu"); // Smiledu app ID for Android
-  } else if (so === "iOS") {
-    window.location.href = "https://apps.apple.com/pe/app/smiledu/id1371922012"; // Smiledu app URL for iOS
-  } else {
-    // Handle other OS cases (optional)
-  }
-}
-	</script>
-
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init();
