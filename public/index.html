@@ -24,8 +24,6 @@
 	<meta property="og:title" content="Colegio Montessori - Exigencia académica y formación humana">
 	<meta property="og:description" content="Colegio Montessori en Villa María del Triunfo con más de 30 años de experiencia.">										    
 	<meta property="og:image" content="https://montessori-production.up.railway.app/img/colegio-montessori-estudiante.png">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
-
 </head>
 
 <body class="antialiased">
@@ -60,30 +58,11 @@
 				<p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="max-w-64 text-xl lg:text-2xl text-white mb-8 lg:max-w-none">
 					29 años de experiencia educativa de calidad</p>
 				<div data-aos="fade-up" data-aos-once="true" data-aos-delay="700"
-					class="w-full flex md:flex items-center justify-center lg:justify-start md:space-x-5">
-					<!--<button onclick="location.href='#form'"
-						class="lg:mx-0 border-2 border-white bg-white bg-opacity-5 text-white text-lg rounded-full py-3 px-7 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out">
-						Contactanos
-					</button>-->
-					
+					class="w-full flex items-center justify-center lg:justify-start md:space-x-5">
 					<button onclick="location.href='#form'"
-        				class=" flex justify-center items-center border-2 border-white bg-white bg-opacity-10 text-white text-lg rounded-full py-0 pl-9 pr-2 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out">
-    					Contactanos <div class="-ml-1 -mt-1 -mb-1 w-14" id="lottie-container"></div>
-					
+        				class="flex justify-center items-center border-2 border-white bg-white bg-opacity-10 text-white text-lg rounded-full py-0 pl-9 pr-2 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out">
+    					Contactanos <div class="lottie-container -ml-1 -mt-1 -mb-1 w-14"></div>			
 					</button>		
-			<script>
-				// Carga la animación cuando la página esté completamente cargada
-				document.addEventListener("DOMContentLoaded", function() {
-					var animationContainer = document.getElementById('lottie-container');
-					lottie.loadAnimation({
-						container: animationContainer, // El contenedor
-						renderer: 'svg',
-						loop: true,
-						autoplay: true,
-						path: 'img/bell.json' // Ruta del archivo JSON
-					});
-				});
-			</script>
 				</div>
 			</div>		
 			<!--Right col-->
@@ -145,7 +124,9 @@
 				<h2 class="text-3xl lg:text-4xl font-bold text-darken">Exigencia académica</h2>
 				<p class="my-5 lg:pr-10 text-lg lg:text-xl lg:max-w-lg text-darken">Nuestro plan de estudios riguroso y personalizado garantiza un alto rendimiento académico.</p>
 				<button onclick="location.href='#form'"
-					class="px-6 py-3 border border-blue text-lg text-blue my-4 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out rounded-full">Contactanos</button>
+					class="flex m-auto lg:m-0 justify-center items-center px-6 border-2 border-blue text-lg text-blue py-0 pl-9 pr-2 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out rounded-full">
+					Contactanos <div class="lottie-container -ml-1 -mt-1 -mb-1 w-14"></div>
+				</button>
 			</div>
 			<img data-aos="fade-left" class="md:w-7/12" src="img/gradebook.png" alt="gradebook">
 		</div>
@@ -159,7 +140,9 @@
 				<h2 class="text-3xl lg:text-4xl font-bold text-darken lg:pr-32">Formación humana</h2>
 				<p class="my-5 lg:pr-10 text-lg lg:text-xl lg:max-w-lg text-darken">Fomentamos el desarrollo integral de cada estudiante, cultivando habilidades sociales y emocionales.</p>
 				<button onclick="location.href='#form'"
-					class="px-6 py-3 border border-blue text-lg text-blue my-4 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out rounded-full">Contactanos</button>
+					class="flex m-auto lg:m-0 justify-center items-center px-6 border-2 border-blue text-lg text-blue py-0 pl-9 pr-2 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out rounded-full">
+					Contactanos <div class="lottie-container -ml-1 -mt-1 -mb-1 w-14"></div>
+				</button>			
 			</div>
 		</div>
 
@@ -169,7 +152,9 @@
 				<h2 class="text-3xl lg:text-4xl font-bold text-darken">Exigencia académica</h2>
 				<p class="my-5 lg:pr-10 text-lg lg:text-xl lg:max-w-lg text-darken">Nuestro plan de estudios riguroso y personalizado garantiza un alto rendimiento académico.</p>
 				<button onclick="location.href='#form'"
-					class="px-6 py-3 border border-blue text-lg text-blue my-4 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out rounded-full">Contactanos</button>
+					class="flex m-auto lg:m-0 justify-center items-center px-6 border-2 border-blue text-lg text-blue py-0 pl-9 pr-2 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out rounded-full">
+					Contactanos <div class="lottie-container -ml-1 -mt-1 -mb-1 w-14"></div>
+				</button>	
 			</div>
 			<img data-aos="fade-left" class="md:w-7/12" src="img/gradebook.png" alt="gradebook">
 		</div>
@@ -471,11 +456,13 @@
 	<script>
 		AOS.init();
 	</script>
+	<script src="js/lottie.js"></script>
 	<script src="js/review.js"></script>
 	<script src="js/sheetForm.js"></script>
 	<script src="js/form.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
 </body>
 
 </html>
