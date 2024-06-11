@@ -5,6 +5,11 @@ import { config } from 'dotenv';
 config({ path: './.env' });
 
 const app = express();
+
+// Habilitar la compresión
+app.use(compression());
+
+// Middlewares
 app.use(express.json());
 app.use(express.static('public'));
 
