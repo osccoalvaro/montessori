@@ -68,13 +68,16 @@
 			<!--Right col-->
 			<div class="relative w-full lg:w-8/12 lg:-mt-10">
 				<!--<img data-aos="fade-up" data-aos-once="true" src="img/colegio-montessori-estudiante.webp" alt="montessori-estudiante">-->
-							<img
-			data-aos="fade-up"
-			data-aos-once="true"
-			src="img/colegio-montessori-estudiante-movil.webp"
-			srcset="img/colegio-montessori-estudiante-movil.webp 600w, img/colegio-montessori-estudiante.webp 1200w"
-			sizes="(max-width: 768px) 600px, 1200px"
-			alt="montessori-estudiante">
+				
+
+			<picture>
+				<!-- Imagen para pantallas pequeñas -->
+				<source media="(max-width: 768px)" srcset="img/colegio-montessori-estudiante-movil.webp">
+				<!-- Imagen para pantallas más grandes -->
+				<source media="(min-width: 769px)" srcset="img/colegio-montessori-estudiante.webp">
+				<!-- Imagen de respaldo en caso de que las anteriores no se carguen -->
+				<img data-aos="fade-up" data-aos-once="true" src="img/colegio-montessori-estudiante.webp" alt="montessori-estudiante">
+			  </picture>
 
 				<div data-aos="fade-up" data-aos-delay="300" data-aos-once="true"
 					class="absolute top-14 -left-3 sm:top-32 sm:left-10 xl:left-8 xl:top-44 floating-4">
