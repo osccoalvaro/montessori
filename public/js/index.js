@@ -1,4 +1,5 @@
 import express from 'express';
+import compression from 'compression';
 import { z, ZodError } from 'zod';
 import sheets, { SHEET_ID } from './sheetClient.js';
 import { config } from 'dotenv';
