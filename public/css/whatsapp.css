@@ -19,6 +19,13 @@
     line-height: 50px;
 }
 
+@media (max-width: 768px) {
+    #whatsapp .wtsapp {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
 #whatsapp .wtsapp img {
     width: 26px;  /* Ajusta el tamaño de la imagen SVG */
     display: block;
