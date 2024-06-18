@@ -15,13 +15,13 @@ app.use(express.json());
 app.use(express.static('public'));
 
 const contactFormSchema = z.object({
+  date: z.string(),
   nombre: z.string().trim().min(1, { message: 'Nombre is required' }),
   apellido: z.string().trim().min(1, { message: 'Apellido is required' }),
   dni: z.string().trim().min(1, { message: 'DNI is required' }),
   email: z.string().trim().min(1, { message: 'Correo is required' }),
   telefono: z.string().trim().min(1, { message: 'Teléfono is required' }),
   grado: z.string().trim().min(1, { message: 'Grado is required' }),
-  date: z.string(),
 });
 
 /*
