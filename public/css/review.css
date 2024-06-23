@@ -72,6 +72,12 @@
     bottom: auto;
 }
 
+@media (max-width: 768px) {
+    .testimonials .swiper-pagination {
+        margin-top: 10px;
+    }
+}
+
 .testimonials .swiper-pagination-bullet {
     height: 10px;
     width: 10px;
