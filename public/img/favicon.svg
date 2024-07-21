@@ -1,0 +1,54 @@
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="440.77" height="434.33" viewBox="0 0 440.77 434.33">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #e41d23;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-5 {
+        fill: #0049bf;
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path-2);
+      }
+    </style>
+    <clipPath id="clip-path" transform="translate(-710.34 -278.67)">
+      <rect id="SVGID" class="cls-1" x="733.6" y="307.31" width="424.05" height="183.61"/>
+    </clipPath>
+    <clipPath id="clip-path-2" transform="translate(-710.34 -278.67)">
+      <rect id="SVGID-2" data-name="SVGID" class="cls-1" x="703.87" y="500.99" width="424.05" height="183.61" transform="translate(1831.79 1185.6) rotate(180)"/>
+    </clipPath>
+  </defs>
+  <title>dashicon2</title>
+  <g>
+    <g>
+      <g>
+        <rect class="cls-2" width="440.77" height="434.33" rx="103.44"/>
+        <rect class="cls-3" x="18.01" y="18" width="404.74" height="398.78" rx="84.42"/>
+      </g>
+      <g class="cls-4">
+        <rect class="cls-5" x="34.77" y="34.25" width="371.3" height="365.83" rx="65.64"/>
+      </g>
+      <g class="cls-6">
+        <rect class="cls-2" x="745.1" y="313.16" width="371.3" height="365.83" rx="65.64" transform="translate(1151.18 713.49) rotate(180)"/>
+      </g>
+      <path class="cls-3" d="M807.83,389.58v44L825.77,445l.12-21.34,104.84,59,105-59v21.25l17.91-11.33V389.7L930.73,456.6Z" transform="translate(-710.34 -278.67)"/>
+      <path class="cls-3" d="M760.58,432.93V604.68h20.93l-.06-138.12L930.61,550l149.19-83.44q0,69-.11,138.1h21.17l-.29-172-170,92.62Z" transform="translate(-710.34 -278.67)"/>
+      <polygon class="cls-3" points="95.57 227.48 95.53 326.01 113.88 326.01 113.88 236.9 95.57 227.48"/>
+    </g>
+    <polygon class="cls-3" points="344.72 227.48 344.76 326.01 326.41 326.01 326.41 236.9 344.72 227.48"/>
+  </g>
+</svg>
